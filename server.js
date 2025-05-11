@@ -36,6 +36,9 @@ const peerServer = ExpressPeerServer(server, {
   proxied: true
 });
 
+
+
+
 // 添加错误处理
 peerServer.on('connection', (client) => {
   console.log('Peer connected:', client.id);
